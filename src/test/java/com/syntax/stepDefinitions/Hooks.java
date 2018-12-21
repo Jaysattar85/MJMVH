@@ -14,7 +14,7 @@ public class Hooks {
 	
 	@After
 	public void end() {
-		BaseClass.tearDown();
+		//BaseClass.tearDown();
 	}
 	
 }

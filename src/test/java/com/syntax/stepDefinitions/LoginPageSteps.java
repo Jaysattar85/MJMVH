@@ -31,6 +31,11 @@ public class LoginPageSteps {
 
 	@Then("^I successfully logged in$")
 	public void i_successfully_logged_in() {
-
+		System.out.println("Successfully logged in");
+	}
+	
+	@Then("^I see error message \"([^\"]*)\"$")
+	public void i_see_error_message(String arg1) throws Throwable {
+	   login.errorMessage.getText();
 	}
 }
