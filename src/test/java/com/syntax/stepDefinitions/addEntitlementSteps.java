@@ -98,7 +98,11 @@ public class addEntitlementSteps extends BaseClass{
 
 	@Then("^I select From Date \"([^\"]*)\" to \"([^\"]*)\"$")
 	public void i_select_From_Date_to(String date, String datel) {
+		emp.datefirst.click();
+		emp.datefirst.clear();
 		CommonMethods.enterValue(emp.datefirst, date);
+		emp.datelast.click();
+		emp.datelast.clear();
 		CommonMethods.enterValue(emp.datelast, datel);
 	}
 
